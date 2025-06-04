@@ -40,10 +40,15 @@ body::before {
   border-radius: 9999px;
   border: 2px solid #14b8a6;
 }
-.logo-text {
+#logo-text {
   color: #14b8a6;
   font-weight: bold;
   font-size: 1.125rem;
+}
+@media (max-width: 560px) {
+  #logo-text {
+    display: none;
+  }
 }
 .header-right {
   display: flex;
@@ -136,8 +141,6 @@ body::before {
 @media (min-width: 768px) {
   #lang-info-long {
     text-align: start;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 .about-image-container {
