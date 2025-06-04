@@ -151,7 +151,7 @@ body::before {
   display: grid;
   grid-template-columns: 2rem auto;
   align-items: center;
-  column-gap: 0.5rem;
+  column-gap: 0.8rem;
 }
 .social-icon {
   color: #14b8a6;
@@ -161,6 +161,11 @@ body::before {
   align-items: center;
   justify-content: center;
   transition: transform 0.2s;
+}
+.social-icon svg {
+  width: 80%;
+  height: 80%;
+  fill: currentColor;
 }
 .social-link-group:hover .social-icon {
   transform: scale(1.25);
