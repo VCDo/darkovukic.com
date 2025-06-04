@@ -355,3 +355,19 @@ body.custom-body {
   color: white;
   font-weight: bold;
 }
+.chip-container {
+  padding: 10px 0px 5px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.chip {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: rgba(31, 41, 55, 1);
+  border-radius: 16px;
+  border: 0px solid #ccc;
+  cursor: default;
+}
