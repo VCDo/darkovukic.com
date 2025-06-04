@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    navAbout: "About",
+    navAbout: "About Me",
     navSkills: "Skills",
     navProjects: "Projects",
     navContact: "Contact",
@@ -12,7 +12,6 @@ const translations = {
     greeting: "Dear Mr. Vukic,\n\nplease send me your CV. Thank you!",
     infoLong: "I've been passionate about software development for over 15 years. Since 2016, my focus has been on developing modern Android apps using Kotlin and the latest Android technologies like Jetpack Compose.",
     projectObtsicarousel: "Android library for displaying a horizontally scrolling list of images in a repeating „one big, two small“ pattern.",
-    contactTitle: "Contact",
     namePlaceholder: "Name",
     emailPlaceholder: "E-Mail",
     messagePlaceholder: "Message",
@@ -32,7 +31,6 @@ const translations = {
     greeting: "Sehr geehrter Herr Vukic,\n\nbitte senden Sie mir Ihren Lebenslauf zu. Vielen Dank!",
     infoLong: "Ich bin seit über 15 Jahren leidenschaftlicher Softwareentwickler. Seit 2016 konzentriere ich mich auf die Entwicklung moderner Android-Apps mit Kotlin und den neuesten Android-Technologien wie Jetpack Compose.",
     projectObtsicarousel: "Android-Bibliothek zur Darstellung eine eine horizontal scrollende Liste von Bildern in einem sich wiederholenden Muster „ein großes, zwei kleine“.",
-    contactTitle: "Kontakt",
     namePlaceholder: "Name",
     emailPlaceholder: "E-Mail",
     messagePlaceholder: "Nachricht",
@@ -52,7 +50,6 @@ const translations = {
     greeting: "Poštovani gospodine Vukiću,\n\nmolim Vas da mi pošaljete svoj životopis. Hvala!",
     infoLong: "Strastveno se bavim razvojem softvera već više od 15 godina. Od 2016. godine fokusiram se na razvoj modernih Android aplikacija koristeći Kotlin i najnovijih Android tehnologija poput Jetpack Compose.",
     projectObtsicarousel: "Android biblioteka za prikaz horizontalno pomicanog popisa slika u ponavljajućem uzorku „jedna velika, dvije male“.",
-    contactTitle: "Kontakt",
     namePlaceholder: "Ime",
     emailPlaceholder: "E-pošta",
     messagePlaceholder: "Poruka",
@@ -79,7 +76,10 @@ function applyTranslations(lang) {
     document.getElementById("message").value = t.greeting;
     document.getElementById("message").focus();
   };
-  document.getElementById("lang-contact-title").textContent = t.contactTitle;
+  document.getElementById("lang-about-title").textContent = t.navAbout;
+  document.getElementById("lang-skills-title").textContent = t.navSkills;
+  document.getElementById("lang-projects-title").textContent = t.navProjects;
+  document.getElementById("lang-contact-title").textContent = t.navContact;
   document.querySelector("input[name='name']").placeholder = t.namePlaceholder;
   document.querySelector("input[name='email']").placeholder = t.emailPlaceholder;
   document.querySelector("textarea[name='message']").placeholder = t.messagePlaceholder;
