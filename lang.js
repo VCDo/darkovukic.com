@@ -12,7 +12,7 @@ const translations = {
     greeting: "Dear Mr. Vukic,\n\nplease send me your CV. Thank you!",
     infoLong: "I've been passionate about software development for over 15 years. Since 2016, my focus has been on developing modern Android apps using Kotlin and the latest Android technologies like Jetpack Compose.",
     projectObtsicarousel: "Android library for displaying a horizontally scrolling list of images in a repeating „one big, two small“ pattern.",
-    projectWebsite: "",
+    projectWebsite: "A custom-designed HTML/CSS website showcasing my work, projects, and skills. Built without frameworks, with a focus on clean code and responsive layout.",
     namePlaceholder: "Name",
     emailPlaceholder: "E-Mail",
     messagePlaceholder: "Message",
