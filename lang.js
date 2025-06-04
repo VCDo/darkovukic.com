@@ -4,7 +4,7 @@ const translations = {
     navSkills: "Skills",
     navProjects: "Projects",
     navContact: "Contact",
-    navImpressum: "Impressum",
+    navImprint: "Imprint",
     navPrivacy: "Privacy Policy",
     profession: "Full-Stack Software Engineer",
     infoShort: "Experienced software developer with a focus on modern Android apps.",
@@ -24,7 +24,7 @@ const translations = {
     navSkills: "Skills",
     navProjects: "Projekte",
     navContact: "Kontakt",
-    navImpressum: "Impressum",
+    navImprint: "Impressum",
     navPrivacy: "Datenschutzerklärung",
     profession: "Full-Stack-Softwareentwickler",
     infoShort: "Erfahrener Softwareentwickler mit Fokus auf moderne Android-Apps.",
@@ -44,7 +44,7 @@ const translations = {
     navSkills: "Skilovi",
     navProjects: "Projekti",
     navContact: "Kontakt",
-    navImpressum: "Impresum",
+    navImprint: "Impresum",
     navPrivacy: "Pravila o privatnosti",
     profession: "Full-stack softverski inženjer",
     infoShort: "Iskusni softverski programer s fokusom na moderne Android aplikacije.",
@@ -90,7 +90,7 @@ function applyTranslations(lang) {
   document.querySelector("button[type='submit']").textContent = t.submit;
 
   document.getElementById("lang-contact-privacy").textContent = t.contactPrivacy;
-  document.getElementById("lang-nav-impressum").textContent = t.navImpressum;
+  document.getElementById("lang-nav-imprint").textContent = t.navImprint;
   document.getElementById("lang-nav-privacy").textContent = t.navPrivacy;
 
   highlightActiveLang(lang);
