@@ -12,6 +12,7 @@ const translations = {
     greeting: "Dear Mr. Vukic,\n\nplease send me your CV. Thank you!",
     infoLong: "I've been passionate about software development for over 15 years. Since 2016, my focus has been on developing modern Android apps using Kotlin and the latest Android technologies like Jetpack Compose.",
     projectObtsicarousel: "Android library for displaying a horizontally scrolling list of images in a repeating „one big, two small“ pattern.",
+    projectWebsite: "",
     namePlaceholder: "Name",
     emailPlaceholder: "E-Mail",
     messagePlaceholder: "Message",
@@ -31,6 +32,7 @@ const translations = {
     greeting: "Sehr geehrter Herr Vukic,\n\nbitte senden Sie mir Ihren Lebenslauf zu. Vielen Dank!",
     infoLong: "Ich bin seit über 15 Jahren leidenschaftlicher Softwareentwickler. Seit 2016 konzentriere ich mich auf die Entwicklung moderner Android-Apps mit Kotlin und den neuesten Android-Technologien wie Jetpack Compose.",
     projectObtsicarousel: "Android-Bibliothek zur Darstellung eine eine horizontal scrollende Liste von Bildern in einem sich wiederholenden Muster „ein großes, zwei kleine“.",
+    projectWebsite: "Eine individuell gestaltete HTML/CSS-Website, die meine Arbeit, Projekte und Fähigkeiten präsentiert. Ohne Frameworks erstellt, mit Fokus auf sauberem Code und responsivem Layout.",
     namePlaceholder: "Name",
     emailPlaceholder: "E-Mail",
     messagePlaceholder: "Nachricht",
@@ -50,6 +52,7 @@ const translations = {
     greeting: "Poštovani gospodine Vukiću,\n\nmolim Vas da mi pošaljete svoj životopis. Hvala!",
     infoLong: "Strastveno se bavim razvojem softvera već više od 15 godina. Od 2016. godine fokusiram se na razvoj modernih Android aplikacija koristeći Kotlin i najnovijih Android tehnologija poput Jetpack Compose.",
     projectObtsicarousel: "Android biblioteka za prikaz horizontalno pomicanog popisa slika u ponavljajućem uzorku „jedna velika, dvije male“.",
+    projectWebsite: "Invidualno dizajnirana HTML/CSS web stranica koja predstavlja moj rad, projekte i vještine. Izrađena bez frameworka, sa fokusom na čistom kodu i responzivnom dizajnu.",
     namePlaceholder: "Ime",
     emailPlaceholder: "E-pošta",
     messagePlaceholder: "Poruka",
@@ -70,6 +73,7 @@ function applyTranslations(lang) {
   document.getElementById("lang-info-short").textContent = t.infoShort;
   document.getElementById("lang-info-long").textContent = t.infoLong;
   document.getElementById("lang-project-obtsicarousel").textContent = t.projectObtsicarousel;
+  document.getElementById("lang-project-website").textContent = t.projectWebsite;
   const resumeBtn = document.getElementById("lang-request-resume");
   resumeBtn.textContent = t.requestResume;
   resumeBtn.onclick = () => {
