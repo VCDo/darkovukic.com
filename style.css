@@ -302,8 +302,10 @@ body::before {
 }
 .footer-badges {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  padding: 1rem 0;
 }
 .footer-copy {
   color: #6b7280;
