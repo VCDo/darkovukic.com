@@ -1,171 +1,166 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Darko Vukic – Android Entwickler</title>
-    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap"/>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="lang.js" defer></script>
-    <!--link rel="stylesheet" href="output.css"-->
-    <link rel="stylesheet" href="style.css">
+    <link href="favicon/favicon.ico" rel="icon" type="image/x-icon"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+    <script defer="" src="lang.js"></script>
+    <link href="style.css" rel="stylesheet"/>
 </head>
-<body class="bg-gray-900 text-white" style="font-family: 'Space Grotesk', sans-serif;">
-<div class="max-w-5xl mx-auto my-10 shadow-xl rounded-xl overflow-hidden px-4 sm:px-6">
-    <header class="flex justify-between items-end px-6 pb-6 pt-2 bg-gray-800/80 rounded-t-xl">
-        <a href="https://darkovukic.com" class="flex items-center space-x-3">
-            <img src="favicon/favicon-32x32.png" alt="Logo"
-                 class="rounded-full border-2 border-teal-400"/>
-            <span class="text-teal-400 font-bold text-lg">Darko Vukic</span>
+<body class="custom-body" style="font-family: 'Space Grotesk', sans-serif;">
+<div class="container">
+    <header class="site-header">
+        <a class="logo-link" href="https://darkovukic.com">
+            <img alt="Logo" class="logo-img" src="favicon/favicon-32x32.png"/>
+            <span class="logo-text">Darko Vukic</span>
         </a>
-        <div class="flex flex-col items-end space-y-2">
-            <div class="space-x-1 text-sm text-gray-400">
-                <button data-lang="hr" onclick="setLanguage('hr')"
-                        class="lang-btn hover:text-teal-400">🇭🇷
-                </button>
-                <button data-lang="en" onclick="setLanguage('en')"
-                        class="lang-btn hover:text-teal-400">🇺🇸
-                </button>
-                <button data-lang="de" onclick="setLanguage('de')"
-                        class="lang-btn hover:text-teal-400">🇩🇪
-                </button>
+        <div class="header-right">
+            <div class="lang-buttons">
+                <button class="lang-btn" data-lang="hr" onclick="setLanguage('hr')">🇭🇷</button>
+                <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">🇺🇸</button>
+                <button class="lang-btn" data-lang="de" onclick="setLanguage('de')">🇩🇪</button>
             </div>
-            <nav class="space-x-6">
-                <a id="lang-nav-about" href="#about" class="hover:text-teal-400">Über mich</a>
-                <a id="lang-nav-skills" href="#skills" class="hover:text-teal-400">Skills</a>
-                <a id="lang-nav-projects" href="#projects" class="hover:text-teal-400">Projekte</a>
-                <a id="lang-nav-contact" href="#contact" class="hover:text-teal-400">Kontakt</a>
+            <nav class="nav-links">
+                <a class="hover-link" href="#about" id="lang-nav-about">About</a>
+                <a class="hover-link" href="#skills" id="lang-nav-skills">Skills</a>
+                <a class="hover-link" href="#projects" id="lang-nav-projects">Projects</a>
+                <a class="hover-link" href="#contact" id="lang-nav-contact">Contact</a>
             </nav>
         </div>
     </header>
-    <section class="text-center py-16 px-4 bg-gray-900/80">
-        <p id="lang-profession" class="text-teal-400 uppercase text-sm mb-2">Full-Stack Software
-            Engineer</p>
-        <h2 class="text-3xl md:text-5xl font-bold mb-4">Darko Vukic</h2>
-        <p id="lang-info-short" class="max-w-xl mx-auto text-gray-300 mb-6">
-            Erfahrener Softwareentwickler mit Fokus auf leistungsstarke und moderne Android-Apps.</p>
-        <a id="lang-request-resume" href="#contact" class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded shadow">
-            Lebenslauf anfordern</a>
+    <section class="intro-section">
+        <p class="intro-role" id="lang-profession">Full-Stack Software Engineer</p>
+        <h2 class="intro-name">Darko Vukic</h2>
+        <p class="intro-description" id="lang-info-short">
+            Experienced software developer with a focus on modern Android apps.
+        </p>
+        <a class="btn-primary" href="#contact" id="lang-request-resume">Request CV</a>
     </section>
-    <section id="about" class="py-16 px-6 bg-gray-800/80">
-        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 items-center relative">
-            <!-- Image and Links -->
-            <div class="relative flex items-center justify-center">
-                <img src="images/me.jpg" alt="Darko Vukic" class="rounded-full border-4 border-teal-400 w-40 h-40 p-1.5"/>
-                <!-- Vertical Icon Links -->
-                <div class="flex flex-col w-44 p-10 space-y-3">
-                    <div class="group grid grid-cols-[2rem_auto] items-center gap-x-2">
-                        <a href="https://www.linkedin.com/in/darko-vukic-7440082a0" target="_blank"
-                           class="text-teal-400 text-2xl min-h-[2rem] flex items-center justify-center transform transition-transform group-hover:scale-125">
+    <section class="section" id="about">
+        <div class="about-grid">
+            <div class="about-image-container">
+                <img alt="Darko Vukic" class="profile-img" src="images/me.jpg"/>
+                <div class="social-links">
+                    <div class="social-link-group">
+                        <a class="social-icon"
+                           href="https://www.linkedin.com/in/darko-vukic-7440082a0" target="_blank">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <span class="text-teal-400 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200">LinkedIn</span>
+                        <span class="social-label">LinkedIn</span>
                     </div>
-                    <div class="group grid grid-cols-[2rem_auto] items-center gap-x-2">
-                        <a href="https://www.xing.com/profile/Darko_Vukic" target="_blank"
-                           class="text-teal-400 text-2xl min-h-[2rem] flex items-center justify-center transform transition-transform group-hover:scale-125">
+                    <div class="social-link-group">
+                        <a class="social-icon" href="https://www.xing.com/profile/Darko_Vukic"
+                           target="_blank">
                             <i class="fab fa-xing"></i>
                         </a>
-                        <span class="text-teal-400 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200">Xing</span>
+                        <span class="social-label">Xing</span>
                     </div>
-                    <div class="group grid grid-cols-[2rem_auto] items-center gap-x-2">
-                        <a href="https://github.com/VCDo" target="_blank"
-                           class="text-teal-400 text-2xl min-h-[2rem] flex items-center justify-center transform transition-transform group-hover:scale-125">
+                    <div class="social-link-group">
+                        <a class="social-icon" href="https://github.com/VCDo" target="_blank">
                             <i class="fab fa-github"></i>
                         </a>
-                        <span class="text-teal-400 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200">GitHub</span>
+                        <span class="social-label">GitHub</span>
                     </div>
-                    <div class="group grid grid-cols-[2rem_auto] items-center gap-x-2">
-                        <a href="mailto:dv@darkovukic.de" class="text-teal-400 text-2xl min-h-[2rem] flex items-center justify-center transform transition-transform group-hover:scale-125">
+                    <div class="social-link-group">
+                        <a class="social-icon" href="mailto:dv@darkovukic.de">
                             <i class="fas fa-envelope"></i>
                         </a>
-                        <span class="text-teal-400 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200">E-Mail</span>
+                        <span class="social-label">E-Mail</span>
                     </div>
                 </div>
             </div>
-            <!-- Text -->
             <div>
-                <h3 id="lang-nav-about" class="text-xl font-bold text-teal-400 mb-4">Über mich</h3>
-                <p id="lang-info-long" class="text-gray-300 mb-4">
+                <h3 class="section-title" id="lang-nav-about">About me</h3>
+                <p class="section-text" id="lang-info-long">
                     I've been passionate about software development for over 15 years.
                     Since 2016, my focus has been on developing modern Android apps using
-                    Java, Kotlin, and the latest Jetpack technologies.</p>
+                    Kotlin and the latest Android technologies like Jetpack.
+                </p>
             </div>
         </div>
     </section>
-    <section id="skills" class="py-16 px-6 bg-gray-900/80">
-        <h3 id="lang-nav-skills" class="text-xl font-bold text-teal-400 mb-6 text-center">Skills</h3>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-gray-300">
-            <div class="bg-gray-800/80 p-4 rounded shadow">Git</div>
-            <div class="bg-gray-800/80 p-4 rounded shadow">Android SDK</div>
-            <div class="bg-gray-800/80 p-4 rounded shadow">Kotlin</div>
-            <div class="bg-gray-800/80 p-4 rounded shadow">Java</div>
-            <div class="bg-gray-800/80 p-4 rounded shadow">Jetpack Compose</div>
-            <div class="bg-gray-800/80 p-4 rounded shadow">Jetpack Room</div>
-            <div class="bg-gray-800/80 p-4 rounded shadow">Kotlin Coroutines</div>
-            <div class="bg-gray-800/80 p-4 rounded shadow">Kotlin Flows</div>
-            <div class="bg-gray-800/80 p-4 rounded shadow">Ktor</div>
-            <div class="bg-gray-800/80 p-4 rounded shadow">Koin</div>
-            <div class="bg-gray-800/80 p-4 rounded shadow">Firebase</div>
-            <div class="bg-gray-800/80 p-4 rounded shadow">GraphQL</div>
-            <div class="bg-gray-800/80 p-4 rounded shadow">MVVM</div>
-            <div class="bg-gray-800/80 p-4 rounded shadow">HTML/CSS</div>
-            <div class="bg-gray-800/80 p-4 rounded shadow">MySQL</div>
-            <div class="bg-gray-800/80 p-4 rounded shadow">Scripting</div>
+    <section class="section" id="skills">
+        <h3 class="section-title" id="lang-nav-skills">Skills</h3>
+        <div class="skills-grid">
+            <div class="skill-item">Git</div>
+            <div class="skill-item">Android SDK</div>
+            <div class="skill-item">Kotlin</div>
+            <div class="skill-item">Java</div>
+            <div class="skill-item">Jetpack Compose</div>
+            <div class="skill-item">Jetpack Room</div>
+            <div class="skill-item">Kotlin Coroutines</div>
+            <div class="skill-item">Kotlin Flows</div>
+            <div class="skill-item">Ktor</div>
+            <div class="skill-item">Koin</div>
+            <div class="skill-item">Firebase</div>
+            <div class="skill-item">GraphQL</div>
+            <div class="skill-item">MVVM</div>
+            <div class="skill-item">HTML/CSS</div>
+            <div class="skill-item">MySQL</div>
+            <div class="skill-item">Scripting</div>
         </div>
     </section>
-    <section id="projects" class="py-16 px-6 bg-gray-800/80">
-        <h3 id="lang-nav-projects" class="text-xl font-bold text-teal-400 mb-6 text-center">Projekte</h3>
-        <div class="grid md:grid-cols-1 gap-6">
-            <div class="bg-gray-900/80 p-6 rounded shadow">
-                <h4 class="text-lg font-semibold text-white mb-2">OneBigTwoSmallImagesCarousel</h4>
+    <section class="section" id="projects">
+        <h3 class="section-title" id="lang-nav-projects">Projects</h3>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h4 class="project-title">
+                    OneBigTwoSmallImagesCarousel
+                </h4>
                 <!-- TODO: Show [Android Library] [Kotlin] [Jetpack Compose] [Open Source] -->
-                <p id="lang-project-obtsicarousel" class="text-gray-300 mb-2">Android library
+                <p class="project-description" id="lang-project-obtsicarousel">
+                    Android library
                     for displaying a horizontally scrolling list of images in a repeating
-                    „one big, two small“ pattern.</p>
-                <a href="https://github.com/VCDo/OneBigTwoSmallImagesCarousel" target="_blank"
-                   class="text-teal-400 hover:underline">GitHub Repository</a>
+                    „one big, two small“ pattern.
+                </p>
+                <a class="project-link" href="https://github.com/VCDo/OneBigTwoSmallImagesCarousel"
+                   target="_blank">
+                    GitHub Repository
+                </a>
             </div>
         </div>
     </section>
-    <section id="contact" class="py-16 px-6 bg-gray-900/80">
-        <h3 id="lang-contact-title" class="text-xl font-bold text-teal-400 mb-6 text-center">
-            Kontakt</h3>
-        <form action="mail.php" method="POST" class="max-w-xl mx-auto space-y-4">
-            <input name="name" type="text" placeholder="Name" class="w-full p-3 rounded bg-gray-800/80 text-white placeholder-gray-400" required/>
-            <input name="email" type="email" placeholder="E-Mail" class="w-full p-3 rounded bg-gray-800/80 text-white placeholder-gray-400" required/>
-            <textarea id="message" name="message" rows="5" placeholder="Nachricht" class="w-full p-3 rounded bg-gray-800/80 text-white placeholder-gray-400"></textarea>
+    <section class="section" id="contact">
+        <h3 class="section-title" id="lang-contact-title">Contact</h3>
+        <form action="mail.php" class="form-container" method="POST">
+            <input class="form-input" name="name" placeholder="Name" required="" type="text"/>
+            <input class="form-input" name="email" placeholder="E-Mail" required="" type="email"/>
+            <textarea class="form-input" id="message" name="message" placeholder="Nachricht" rows="5"></textarea>
             <!-- Honeypot-Feld -->
-            <input type="text" name="website" class="hidden" tabindex="-1" autocomplete="off"/>
-            <button type="submit" class="bg-teal-500 hover:bg-teal-600 px-6 py-2 rounded text-white">Absenden
-            </button>
+            <input autocomplete="off" class="hidden" name="website" tabindex="-1" type="text"/>
+            <button class="submit-button" type="submit">Send</button>
         </form>
-        <p id="lang-contact-privacy" class="text-sm text-gray-400 mt-6 max-w-xl mx-auto text-center">
-           By submitting this form, you agree that your information will be stored and processed to 
-           answer your inquiry. Further information can be found in our privacy policy.</p>
+        <p class="privacy-note" id="lang-contact-privacy">
+            By submitting this form, you agree that your information will be stored and processed to
+            answer your inquiry. Further information can be found in our privacy policy.
+        </p>
     </section>
-    <!-- Footer -->
-    <footer class="bg-gray-800/80 text-center text-sm text-gray-400 py-2 rounded-b-xl space-y-3">
-        <div class="flex justify-between items-start px-6 pt-4">
-            <div class="flex justify-center space-x-4">
-                <a href="https://validator.w3.org/check?uri=referer" target="_blank" rel="noopener">
-                    <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-device-graphics.png" width="100" height="40" alt="HTML5 + CSS3 Badge"/>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-badges">
+                <a href="https://validator.w3.org/check?uri=referer" rel="noopener" target="_blank">
+                    <img alt="HTML5 + CSS3 Badge" height="40"
+                         src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-device-graphics.png"
+                         width="100"/>
                 </a>
-                <a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener">
-                    <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!"/>
+                <a href="https://jigsaw.w3.org/css-validator/" rel="noopener" target="_blank">
+                    <img alt="Valid CSS!" src="https://jigsaw.w3.org/css-validator/images/vcss"/>
                 </a>
-                <a href="https://www.w3.org/WAI/" target="_blank" rel="noopener">
-                    <img src="https://www.w3.org/WAI/assets/images/w3c-wai.png" alt="W3C WAI" width="90"/>
+                <a href="https://www.w3.org/WAI/" rel="noopener" target="_blank">
+                    <img alt="W3C WAI" src="https://www.w3.org/WAI/assets/images/w3c-wai.png"
+                         width="90"/>
                 </a>
             </div>
             <div>
-                <a id="lang-nav-impressum" href="impressum.html" class="hover:text-teal-400">Impressum</a> ·
-                <a id="lang-nav-privacy" href="privacy_policy.html" class="hover:text-teal-400">Datenschutz</a>
+                <a class="hover-link" href="impressum.html" id="lang-nav-impressum">Impressum</a>
+                ·
+                <a class="hover-link" href="privacy_policy.html" id="lang-nav-privacy">Datenschutz</a>
             </div>
         </div>
-        <div class="text-gray-500 text-sm pt-0">© 2025 Darko Vukic 🚀</p>
+        <div class="footer-copy">© 2025 Darko Vukic 🚀</div>
     </footer>
 </div>
 </body>
