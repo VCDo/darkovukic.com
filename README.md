@@ -18,18 +18,20 @@ This static website is built with **HTML5** and **classic CSS** (no TailwindCSS)
 
 ```
 darkovukic.com/
-├── backend/            # Backend scripts
-├── favicon/            # Favicon images
-├── images/             # Images resources
-├── .gitignore          # GIT configuration for ignoring files
-├── imprint.html        # Imprint page
-├── index.html          # Main landing page
-├── lang.js             # Translation
-├── LICENSE             # MIT License
-├── privacy_policy      # Privacy Policy page
-├── README.md           # This file
-├── site.webmanifest    # Metadata
-└── style.css           # Classic CSS styles
+├── backend/                      # Backend scripts
+├── favicon/                      # Favicon images
+├── images/                       # Images resources
+├── js/                           # Java Script code
+├───── email-status-handler.js    # Handles the send-message-status
+├───── lang.js                    # Handles the website translation
+├── .gitignore                    # GIT configuration for ignoring files
+├── imprint.html                  # Imprint page
+├── index.html                    # Main landing page
+├── LICENSE                       # MIT License
+├── privacy_policy                # Privacy Policy page
+├── README.md                     # This file
+├── site.webmanifest              # Metadata
+└── style.css                     # Classic CSS styles
 ```
 
 ## 🌐 Live Version
