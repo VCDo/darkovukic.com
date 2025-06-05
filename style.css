@@ -119,6 +119,10 @@ body::before {
   padding: 4rem 1.5rem;
   background-color: rgba(31, 41, 55, 0.8);
 }
+.section-alternative {
+  padding: 4rem 1.5rem;
+  background-color: rgba(17, 24, 39, 0.8);
+}
 .about-grid {
   display: grid;
   gap: 2.5rem;
@@ -401,4 +405,19 @@ body.custom-body {
   border-radius: 16px;
   border: 0px solid #ccc;
   cursor: default;
+}
+.privacy-text {
+  max-width: 100%;
+  color: #d1d5db;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  margin-bottom: 2rem;
+  display: block;
+  white-space: pre-line;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+.privacy-text a {
+  color: #14b8a6;
+  text-decoration: underline;
 }
