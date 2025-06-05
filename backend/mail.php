@@ -19,7 +19,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = "Message from darkovukic.de";
     $headers = "From: $email\r\nReply-To: $email";
     $body = "Name: $name\nE-Mail: $email\n\nMessage:\n$message";
-
     if (mail($to, $subject, $body, $headers)) {
         echo "Thank you $name! Your message has been sent.";
     } else {
