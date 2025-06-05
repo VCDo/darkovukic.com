@@ -416,3 +416,16 @@ body
 a:hover {
   color: #14b8a6;
 }
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px rgba(31, 41, 55, 0.8) inset !important;
+  -webkit-text-fill-color: white !important;
+  caret-color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+input:autofill,
+textarea:autofill {
+  background-color: rgba(31, 41, 55, 0.8) !important;
+  color: white !important;
+  caret-color: white !important;
+}
