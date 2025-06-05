@@ -277,6 +277,7 @@ body::before {
   color: white;
   min-height: fit-content;
   resize: vertical;
+  font-family: 'Space Grotesk', sans-serif;
 }
 .form-input::placeholder {
   color: #9ca3af;
